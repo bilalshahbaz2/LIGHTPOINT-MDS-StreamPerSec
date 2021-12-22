@@ -1,0 +1,4 @@
+﻿AAPL
+IBM
+HOME
+DASH

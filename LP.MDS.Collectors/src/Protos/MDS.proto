@@ -1,0 +1,110 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "GrpcService.MDS";
+
+package MDS;
+
+service MdsGrpcService{
+ 
+    rpc GetReferenceData(IncomingRequest) returns (OutgoingMessage);
+
+    rpc GetReferenceDataSubsciption(IncomingRequest) returns (AckOutgoingMessage);
+
+    rpc Subscribe(IncomingRequest) returns (AckOutgoingMessage);
+
+    rpc UnSubscribe(UnSubscriptionRequest) returns (AckOutgoingMessage);
+
+    rpc SubscriptionFeedHandler( google.protobuf.Empty ) returns (stream OutgoingMessage);
+
+    rpc GetSearchData(IncomingRequest) returns (AckOutgoingMessage);
+}
+
+enum RequestType
+{   
+    Reference = 0;
+    Subscription = 1;
+    Search = 2;
+}
+
+message IncomingRequest{
+    string correlationId = 1;
+    string version = 2;
+    string requestor = 3;
+    string timestamp = 4;
+    string datasource = 5;
+    string userId  = 6;
+    RequestType requesttype = 7;
+    RequestBag requestBag = 21;
+}
+
+message RequestBag{
+    repeated SecurityDefinitionRequest securities = 1;
+    repeated string fields = 2;
+    optional int32 Rate = 3;
+    optional string options = 4;
+    optional string keyword = 5;
+}
+
+message SecurityDefinitionRequest{
+    string securityIdentifier = 11;
+    string identifierType  = 12;
+}
+
+
+message OutgoingMessage{
+    string correlationId = 1;
+    string version = 2;
+    string requestor = 3;
+    string timestamp = 4;
+    string datasource = 5;
+    string userId  = 6;
+    RequestType requesttype = 7;
+
+    ResponseBagMessage responseBag = 21;
+}
+
+message ResponseBagMessage{
+   repeated ResponseBagItemMessage items = 1;
+}
+
+message ResponseBagItemMessage{
+    SecurityDefinitionMessage security =  1;
+    map<string, FieldDescriptorMessage> fieldValues = 2;
+    map<string, string> referenceDataErrors = 3;
+    optional string sequencenumber = 4;
+    optional string message = 5;
+}
+
+message FieldDescriptorMessage {
+    string value = 1;
+    bool hasError = 2;
+    string timestamp = 3;
+    optional string originatingSource = 4;
+    optional string message = 5;
+    optional string collectorCode = 6;
+    string Key = 7;
+}
+
+message SecurityDefinitionMessage{
+    string securityIdentifier = 1;
+    string identifierType = 2;
+    optional string message  = 3;
+}
+
+message UnSubscriptionRequest{
+    repeated string tickers = 1;
+}
+
+message AckOutgoingMessage{
+    string version = 1;
+    string requestor = 2;
+    string timestamp = 3;
+    string datasource = 4;
+    string userId = 5;
+    string correlationId = 6;
+    bool hassubscribed = 7;
+    string message = 8;
+}

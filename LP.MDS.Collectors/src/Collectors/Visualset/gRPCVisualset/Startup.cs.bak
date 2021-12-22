@@ -1,0 +1,78 @@
+using Base.Marker;
+using gRPCBaseCollector;
+using gRPCBaseCollector.Services;
+using GrpcService.MDS;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using ProcessorProtocol;
+using ServiceProtocol;
+using ServiceProtocol.Services;
+using VisualsetProcessor.Generator;
+using VisualsetProcessor.Processor;
+
+namespace gRPCVisualset
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services) {
+
+<<<<<<< Updated upstream
+            services.AddHostedService<RealtimeGenerator>();
+=======
+            //services.AddHostedService<SubscriptionGenerator>();
+>>>>>>> Stashed changes
+
+            services.AddSingleton<ClientRegistery<OutgoingMessage>, GrpcClientRegisteryImpl>();
+            services.AddSingleton<SubscriptionManager, SubscriptionManagerImpl>();
+            services.AddSingleton<ReferenceDataProcessor, ReferenceDataProcessorImpl>();
+            services.AddSingleton<MarketDataProcessor, SubscriptionDataProcessorImpl>();
+            services.AddSingleton<IReferenceDataService, ReferenceDataService>();
+            services.AddSingleton<IMarketDataService, MarketDataService>();
+
+            //services.AddTransient<MarketDataProcessor, SubscriptionDataProcessImpl>();
+
+            BaseMarker.Init<ServiceProtocolMarker>( services );
+            BaseMarker.Init<gRPCBaseCollectorMaker>( services );
+
+            services.AddControllers();
+            //gRPCBaseCollector.Register(services);
+            services.AddGrpc();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            //app.UseAuthorization();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGrpcService<MdsGrpcServiceImpl>();
+            });
+        }
+    }
+}

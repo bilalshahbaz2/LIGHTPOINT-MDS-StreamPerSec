@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Base.Marker\Base.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Logger.Marker\Logger.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ProcessorProtocol\ProcessorProtocol.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ServiceProtocol\ServiceProtocol.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Processor\" />
+    <None Remove="Generator\" />
+    <None Remove="Bogus" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Processor\" />
+    <Folder Include="Generator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="33.1.1" />
+  </ItemGroup>
+</Project>

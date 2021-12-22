@@ -1,0 +1,13 @@
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\NLog.config
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\Logger.Marker.deps.json
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\Logger.Marker.dll
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\Logger.Marker.pdb
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\Base.Marker.dll
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\bin\Debug\netstandard2.0\Base.Marker.pdb
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.csproj.AssemblyReference.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.AssemblyInfoInputs.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.AssemblyInfo.cs
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.csproj.CoreCompileInputs.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.csproj.CopyComplete
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.dll
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Logger.Marker\obj\Debug\netstandard2.0\Logger.Marker.pdb

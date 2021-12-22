@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>LP.Collectors.Factset.WS</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\MappingProtocol\MappingProtocol.csproj" />
+    <ProjectReference Include="..\..\BaseCollector\gRPCBaseCollector\gRPCBaseCollector.csproj" />
+    <ProjectReference Include="..\..\BaseCollector\WebsocketBaseCollector\WebsocketBaseCollector.csproj" />
+    <ProjectReference Include="..\FactsetProcessor\FactsetProcessor.csproj" />
+  </ItemGroup>
+
+</Project>

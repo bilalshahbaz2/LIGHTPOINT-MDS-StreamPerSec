@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Markers\Base.Marker\Base.Marker.csproj" />
+    <ProjectReference Include="..\..\Markers\Logger.Marker\Logger.Marker.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Mappable\" />
+    <None Remove="Extenstions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+    <Folder Include="Extenstions\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+</Project>

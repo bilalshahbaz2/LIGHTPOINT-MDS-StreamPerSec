@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Logger.Marker\Logger.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Web.Marker\Web.Marker.csproj" />
+    <ProjectReference Include="..\..\BaseCollector\gRPCBaseCollector\gRPCBaseCollector.csproj" />
+    <ProjectReference Include="..\VisualsetProcessor\VisualsetProcessor.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

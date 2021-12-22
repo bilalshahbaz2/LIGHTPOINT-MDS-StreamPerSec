@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>LP.Collectors.Factset.gRPC</AssemblyName>
+    <RootNamespace>LP.Collectors.Factset.gRPC</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaseCollector\gRPCBaseCollector\gRPCBaseCollector.csproj" />
+    <ProjectReference Include="..\FactsetProcessor\FactsetProcessor.csproj" />
+  </ItemGroup>
+
+</Project>

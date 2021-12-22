@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Web.Marker\Web.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\CommandProtocol\CommandProtocol.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ProcessorProtocol\ProcessorProtocol.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ServiceProtocol\ServiceProtocol.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Hubs\" />
+    <None Remove="Microsoft.AspNetCore.SignalR" />
+    <None Remove="HostedServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hubs\" />
+    <Folder Include="HostedServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.MessagePack" Version="5.0.12" />
+  </ItemGroup>
+</Project>

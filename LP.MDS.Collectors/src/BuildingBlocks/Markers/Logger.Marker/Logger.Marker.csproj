@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.12" />
+    <PackageReference Include="NLog.Config" Version="4.7.12" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.7.4" />
+    <PackageReference Include="NLog.StructuredLogging.Json" Version="4.0.0" />
+    <PackageReference Include="NLog.WindowsIdentity" Version="4.7.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Base.Marker\Base.Marker.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NLog.StructuredLogging.Json" />
+  </ItemGroup>
+</Project>

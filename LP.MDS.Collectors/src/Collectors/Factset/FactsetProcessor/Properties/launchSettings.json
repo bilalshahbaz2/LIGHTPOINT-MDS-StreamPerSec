@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FactsetProcessor": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

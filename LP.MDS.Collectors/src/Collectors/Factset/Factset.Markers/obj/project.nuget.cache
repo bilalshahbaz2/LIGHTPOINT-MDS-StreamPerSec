@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/QnDfA51G6AXTQiJVUn5KOtfwK4gxTugCGWJ602vy+NYJKGTO3LDSytdqhMEkLSJr026tVtCciyz0Gqxmnku7g==",
+  "success": true,
+  "projectFilePath": "C:\\src\\LIGHTPOINT-MDS-StreamPerSec\\LP.MDS.Collectors\\src\\Collectors\\Factset\\Factset.Markers\\Factset.Markers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bshahbaz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bshahbaz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

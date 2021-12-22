@@ -1,0 +1,9 @@
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\bin\Release\netstandard2.0\Base.Marker.deps.json
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\bin\Release\netstandard2.0\Base.Marker.dll
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\bin\Release\netstandard2.0\Base.Marker.pdb
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.csproj.AssemblyReference.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.AssemblyInfoInputs.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.AssemblyInfo.cs
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.csproj.CoreCompileInputs.cache
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.dll
+C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\BuildingBlocks\Markers\Base.Marker\obj\Release\netstandard2.0\Base.Marker.pdb

@@ -1,0 +1,66 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "GrpcService.MDS";
+
+package MDS;
+
+service MdsGrpcService{
+ 
+    rpc GetReferenceData(IncomingRequest) returns (ReferenceData);
+
+    rpc Subscribe(SubscriptionRequest) returns (MarketData);
+
+    rpc UnSubscribe(UnSubscriptionRequest) returns (MarketData);
+
+    rpc MarketDataHandler( google.protobuf.Empty ) returns (stream DataItem);
+
+    rpc GetSearchData(IncomingRequest) returns (AckOutgoingMessage);
+
+}
+
+message IncomingRequest{
+    string correlationId = 1;
+    string version = 2;
+    string requestor = 3;
+    string timestamp = 4;
+    string datasource = 5;
+    string userId  = 6;
+
+    ReferenceDataRequest params = 21;
+}
+
+message SecurityDefinitionRequest{
+    string securityIdentifier = 11;
+    string identifierType  = 12;
+}
+
+message ReferenceDataRequest{
+    repeated SecurityDefinitionRequest securities = 1;
+    repeated string fields = 2;
+}
+
+message SubscriptionRequest{
+    repeated string tickers = 1;
+    repeated string mnemonics = 2;
+}
+
+message UnSubscriptionRequest{
+    repeated string tickers = 1;
+}
+
+message ReferenceData{
+   repeated DataItem items = 1;
+}
+
+message MarketData{
+    repeated DataItem items = 1;
+}
+
+message DataItem{
+    string ticker = 1;
+    map<string,string> mnemonics = 2;
+    string message = 3;
+}

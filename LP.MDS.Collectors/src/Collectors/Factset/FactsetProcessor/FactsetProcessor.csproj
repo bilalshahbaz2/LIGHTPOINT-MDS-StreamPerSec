@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelMapper" Version="5.2.337" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Logger.Marker\Logger.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\MappingProtocol\MappingProtocol.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ProcessorProtocol\ProcessorProtocol.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ServiceProtocol\ServiceProtocol.csproj" />
+    <ProjectReference Include="..\Factset.Markers\Factset.Markers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FactsetDto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FactSet.Datafeed_x64">
+      <HintPath>..\Factset.Markers\Libs\FactSet.Datafeed_x64.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

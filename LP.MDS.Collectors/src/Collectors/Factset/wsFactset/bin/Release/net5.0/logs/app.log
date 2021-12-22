@@ -1,0 +1,499 @@
+2021-12-15 10:21:53.9947 Info Message Template Auto Format enabled
+2021-12-15 10:21:54.0179 Info Loading assembly: NLog.Web.AspNetCore
+2021-12-15 10:21:54.0179 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-12-15 10:21:54.0330 Info Loading assembly: NLog.StructuredLogging.Json
+2021-12-15 10:21:54.0330 Debug ScanAssembly('NLog.StructuredLogging.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null')
+2021-12-15 10:21:54.0583 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.0678 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.0678 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.0820 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.0939 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.0939 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.1117 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.1293 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.1493 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.1493 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'True'
+2021-12-15 10:21:54.1520 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.1520 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.1520 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.1520 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.1684 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.1684 Debug Setting 'NLog.Targets.ConsoleTarget.name' to 'jsonconsole'
+2021-12-15 10:21:54.1684 Debug Setting 'NLog.Targets.ConsoleTarget.layout' to '${structuredlogging.json}'
+2021-12-15 10:21:54.1684 Info Adding target ConsoleTarget(Name=jsonconsole)
+2021-12-15 10:21:54.1684 Debug Registered target jsonconsole: NLog.Targets.ConsoleTarget
+2021-12-15 10:21:54.1684 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.1947 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${callsite:className=True:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.1947 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'True'
+2021-12-15 10:21:54.1947 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.1947 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.1991 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.1991 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.1991 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-12-15 10:21:54.1991 Info Adding target ColoredConsoleTarget(Name=console)
+2021-12-15 10:21:54.1991 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.Targets.FileTarget.name' to 'wsFactset'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate}-${callsite:className=true:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.2161 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-wsFactset.Log'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.Targets.FileTarget.keepFileOpen' to 'false'
+2021-12-15 10:21:54.2357 Debug Setting 'NLog.Targets.FileTarget.encoding' to 'iso-8859-2'
+2021-12-15 10:21:54.2357 Warn Error when setting property 'Encoding' on 'NLog.Targets.FileTarget' Exception: System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+2021-12-15 10:21:54.2749 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error when setting property 'Encoding' on FileTarget
+ ---> System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   --- End of inner exception stack trace ---
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Config.LoggingConfigurationParser.ConfigureObjectFromAttributes(Object targetObject, ILoggingConfigurationElement element, Boolean ignoreType)
+2021-12-15 10:21:54.2749 Info Adding target FileTarget(Name=wsFactset)
+2021-12-15 10:21:54.2769 Debug Registered target wsFactset: NLog.Targets.FileTarget
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.Targets.FileTarget.name' to 'collectorhub'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate}-${callsite:className=true:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-Hub.Log'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.2769 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.Targets.FileTarget.keepFileOpen' to 'false'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.Targets.FileTarget.encoding' to 'iso-8859-2'
+2021-12-15 10:21:54.2929 Warn Error when setting property 'Encoding' on 'NLog.Targets.FileTarget' Exception: System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+2021-12-15 10:21:54.2929 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error when setting property 'Encoding' on FileTarget
+ ---> System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   --- End of inner exception stack trace ---
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Config.LoggingConfigurationParser.ConfigureObjectFromAttributes(Object targetObject, ILoggingConfigurationElement element, Boolean ignoreType)
+2021-12-15 10:21:54.2929 Info Adding target FileTarget(Name=collectorhub)
+2021-12-15 10:21:54.2929 Debug Registered target collectorhub: NLog.Targets.FileTarget
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.Targets.FileTarget.name' to 'processor'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate}-${callsite:className=true:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.2929 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-Processor.Log'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.Targets.FileTarget.keepFileOpen' to 'false'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.Targets.FileTarget.encoding' to 'iso-8859-2'
+2021-12-15 10:21:54.3097 Warn Error when setting property 'Encoding' on 'NLog.Targets.FileTarget' Exception: System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+2021-12-15 10:21:54.3097 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error when setting property 'Encoding' on FileTarget
+ ---> System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   --- End of inner exception stack trace ---
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Config.LoggingConfigurationParser.ConfigureObjectFromAttributes(Object targetObject, ILoggingConfigurationElement element, Boolean ignoreType)
+2021-12-15 10:21:54.3097 Info Adding target FileTarget(Name=processor)
+2021-12-15 10:21:54.3097 Debug Registered target processor: NLog.Targets.FileTarget
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.3097 Debug Setting 'NLog.Targets.FileTarget.name' to 'wsFactset'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate}-${callsite:className=true:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-wsFactset.Log'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.Targets.FileTarget.keepFileOpen' to 'false'
+2021-12-15 10:21:54.3246 Debug Setting 'NLog.Targets.FileTarget.encoding' to 'iso-8859-2'
+2021-12-15 10:21:54.3403 Warn Error when setting property 'Encoding' on 'NLog.Targets.FileTarget' Exception: System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+2021-12-15 10:21:54.3403 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error when setting property 'Encoding' on FileTarget
+ ---> System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   --- End of inner exception stack trace ---
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Config.LoggingConfigurationParser.ConfigureObjectFromAttributes(Object targetObject, ILoggingConfigurationElement element, Boolean ignoreType)
+2021-12-15 10:21:54.3403 Info Adding target FileTarget(Name=wsFactset)
+2021-12-15 10:21:54.3403 Debug Registered target wsFactset: NLog.Targets.FileTarget
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.Targets.FileTarget.name' to 'snapshot'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate}-${callsite:className=true:methodName=True}-[L${callsite-linenumber}]|${uppercase:${level}}|[TID:${threadId}]|${event-properties:item=EventId_Id:whenEmpty=0}|${message}${exception:format=tostring}'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.Inner' to '${level}'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'EventId_Id'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-snapshot.Log'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.3403 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.3560 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.3560 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.3560 Debug Setting 'NLog.Targets.FileTarget.keepFileOpen' to 'false'
+2021-12-15 10:21:54.3560 Debug Setting 'NLog.Targets.FileTarget.encoding' to 'iso-8859-2'
+2021-12-15 10:21:54.3560 Warn Error when setting property 'Encoding' on 'NLog.Targets.FileTarget' Exception: System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+2021-12-15 10:21:54.3560 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error when setting property 'Encoding' on FileTarget
+ ---> System.ArgumentException: 'iso-8859-2' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at NLog.Internal.PropertyHelper.TryParseEncodingValue(String stringValue, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Internal.PropertyHelper.TryNLogSpecificConversion(Type propertyType, String value, ConfigurationItemFactory configurationItemFactory, Object& newValue)
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   --- End of inner exception stack trace ---
+   at NLog.Internal.PropertyHelper.SetPropertyFromString(Object obj, String propertyName, String value, ConfigurationItemFactory configurationItemFactory)
+   at NLog.Config.LoggingConfigurationParser.ConfigureObjectFromAttributes(Object targetObject, ILoggingConfigurationElement element, Boolean ignoreType)
+2021-12-15 10:21:54.3560 Info Adding target FileTarget(Name=snapshot)
+2021-12-15 10:21:54.3711 Debug Registered target snapshot: NLog.Targets.FileTarget
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.Targets.FileTarget.name' to 'jprocessor'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:/Temp/ErrorLog/LP.FactsetCollector/${shortdate}__${windows-identity:userName=false:domain=true}-${windows-identity:userName=true:domain=false}_${processid}-processor.json'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'false'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'true'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.userName' to 'true'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.LayoutRenderers.WindowsIdentityLayoutRenderer.domain' to 'false'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.Targets.FileTarget.archiveAboveSize' to '30000000'
+2021-12-15 10:21:54.3711 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'time'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.layout' to '${longdate}'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'callsite'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.layout' to '${callsite:className=true:methodName=True}-${callsite-linenumber}'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.className' to 'true'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.LayoutRenderers.CallSiteLayoutRenderer.methodName' to 'True'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'level'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.layout' to '${level}'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'message'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.layout' to '${message}'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'eventProperties'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.encode' to 'false'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonLayout.includeAllProperties' to 'true'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonLayout.maxRecursionLimit' to '2'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.name' to 'exception'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.layout' to '${exception:format=@}'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to '@'
+2021-12-15 10:21:54.3882 Debug Setting 'NLog.Layouts.JsonAttribute.encode' to 'false'
+2021-12-15 10:21:54.3882 Info Adding target FileTarget(Name=jprocessor)
+2021-12-15 10:21:54.3882 Debug Registered target jprocessor: NLog.Targets.FileTarget
+2021-12-15 10:21:54.4333 Debug Watching path 'C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\Collectors\Factset\wsFactset\bin\Release\net5.0' filter 'nlog.config' for changes.
+2021-12-15 10:21:54.4363 Debug --- NLog configuration dump ---
+2021-12-15 10:21:54.4363 Debug Targets:
+2021-12-15 10:21:54.4363 Debug Console Target[jsonconsole]
+2021-12-15 10:21:54.4363 Debug ColoredConsole Target[console]
+2021-12-15 10:21:54.4363 Debug File Target[wsFactset]
+2021-12-15 10:21:54.4363 Debug File Target[collectorhub]
+2021-12-15 10:21:54.4363 Debug File Target[processor]
+2021-12-15 10:21:54.4363 Debug File Target[snapshot]
+2021-12-15 10:21:54.4363 Debug File Target[jprocessor]
+2021-12-15 10:21:54.4363 Debug Rules:
+2021-12-15 10:21:54.4363 Debug logNamePattern: (wsFactset.:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ wsFactset ]
+2021-12-15 10:21:54.4363 Debug logNamePattern: (WebsocketBaseCollector.Hubs.:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ collectorhub ]
+2021-12-15 10:21:54.4493 Debug logNamePattern: (WebsocketBaseCollector.HostedServices.:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ collectorhub ]
+2021-12-15 10:21:54.4493 Debug logNamePattern: (FactsetProcessor.:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ jprocessor processor ]
+2021-12-15 10:21:54.4493 Debug logNamePattern: (snapshot:Equals) levels: [ Info Warn Error Fatal ] appendTo: [ jprocessor processor snapshot ]
+2021-12-15 10:21:54.4493 Debug logNamePattern: (:All) levels: [ Info Warn Error Fatal ] appendTo: [ console ]
+2021-12-15 10:21:54.4493 Debug --- End of NLog configuration dump ---
+2021-12-15 10:21:54.4493 Info Validating config: Targets=6, ConfigItems=178, FilePath=C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\Collectors\Factset\wsFactset\bin\Release\net5.0\nlog.config
+2021-12-15 10:21:54.4679 Debug Unused target checking is started... Rule Count: 6, Target Count: 7
+2021-12-15 10:21:54.4679 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: jsonconsole
+2021-12-15 10:21:54.4679 Debug Unused target checking is completed. Total Rule Count: 6, Total Target Count: 7, Unused Target Count: 1
+2021-12-15 10:21:54.5136 Debug Targets for wsFactset.Program by level:
+2021-12-15 10:21:54.5136 Debug Trace =>
+2021-12-15 10:21:54.5136 Debug Debug =>
+2021-12-15 10:21:54.5136 Debug Info => wsFactset console
+2021-12-15 10:21:54.5136 Debug Warn => wsFactset console
+2021-12-15 10:21:54.5136 Debug Error => wsFactset console
+2021-12-15 10:21:54.5136 Debug Fatal => wsFactset console
+2021-12-15 10:21:54.5862 Debug FileTarget(Name=wsFactset): Preparing for new file 'C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-wsFactset.Log'
+2021-12-15 10:21:54.5963 Debug Creating file appender: C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-wsFactset.Log
+2021-12-15 10:21:55.0124 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-12-15 10:21:55.1149 Debug Hide assemblies for callsite
+2021-12-15 10:21:55.1149 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-12-15 10:21:55.1492 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
+2021-12-15 10:21:55.1492 Debug Trace =>
+2021-12-15 10:21:55.1492 Debug Debug =>
+2021-12-15 10:21:55.1537 Debug Info => console
+2021-12-15 10:21:55.1537 Debug Warn => console
+2021-12-15 10:21:55.1537 Debug Error => console
+2021-12-15 10:21:55.1537 Debug Fatal => console
+2021-12-15 10:21:55.1680 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
+2021-12-15 10:21:55.1680 Debug Trace =>
+2021-12-15 10:21:55.1680 Debug Debug =>
+2021-12-15 10:21:55.1680 Debug Info => console
+2021-12-15 10:21:55.1680 Debug Warn => console
+2021-12-15 10:21:55.1898 Debug Error => console
+2021-12-15 10:21:55.1898 Debug Fatal => console
+2021-12-15 10:21:55.1898 Debug Targets for Microsoft.Hosting.Lifetime by level:
+2021-12-15 10:21:55.1898 Debug Trace =>
+2021-12-15 10:21:55.1898 Debug Debug =>
+2021-12-15 10:21:55.1995 Debug Info => console
+2021-12-15 10:21:55.1995 Debug Warn => console
+2021-12-15 10:21:55.1995 Debug Error => console
+2021-12-15 10:21:55.1995 Debug Fatal => console
+2021-12-15 10:21:58.8113 Debug Targets for ServiceProtocol.Services.ReferenceDataService by level:
+2021-12-15 10:21:58.8113 Debug Trace =>
+2021-12-15 10:21:58.8113 Debug Debug =>
+2021-12-15 10:21:58.8113 Debug Info => console
+2021-12-15 10:21:58.8113 Debug Warn => console
+2021-12-15 10:21:58.8113 Debug Error => console
+2021-12-15 10:21:58.8113 Debug Fatal => console
+2021-12-15 10:21:58.8309 Debug Targets for Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager by level:
+2021-12-15 10:21:58.8309 Debug Trace =>
+2021-12-15 10:21:58.8309 Debug Debug =>
+2021-12-15 10:21:58.8309 Debug Info => console
+2021-12-15 10:21:58.8309 Debug Warn => console
+2021-12-15 10:21:58.8309 Debug Error => console
+2021-12-15 10:21:58.8309 Debug Fatal => console
+2021-12-15 10:21:58.8309 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2021-12-15 10:21:58.8309 Debug Trace =>
+2021-12-15 10:21:58.8309 Debug Debug =>
+2021-12-15 10:21:58.8401 Debug Info => console
+2021-12-15 10:21:58.8401 Debug Warn => console
+2021-12-15 10:21:58.8401 Debug Error => console
+2021-12-15 10:21:58.8401 Debug Fatal => console
+2021-12-15 10:21:58.8401 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2021-12-15 10:21:58.8401 Debug Trace =>
+2021-12-15 10:21:58.8401 Debug Debug =>
+2021-12-15 10:21:58.8401 Debug Info => console
+2021-12-15 10:21:58.8401 Debug Warn => console
+2021-12-15 10:21:58.8401 Debug Error => console
+2021-12-15 10:21:58.8401 Debug Fatal => console
+2021-12-15 10:21:58.8401 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware by level:
+2021-12-15 10:21:58.8401 Debug Trace =>
+2021-12-15 10:21:58.8401 Debug Debug =>
+2021-12-15 10:21:58.8401 Debug Info => console
+2021-12-15 10:21:58.8401 Debug Warn => console
+2021-12-15 10:21:58.8401 Debug Error => console
+2021-12-15 10:21:58.8401 Debug Fatal => console
+2021-12-15 10:21:58.8401 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2021-12-15 10:21:58.8401 Debug Trace =>
+2021-12-15 10:21:58.8401 Debug Debug =>
+2021-12-15 10:21:58.8401 Debug Info => console
+2021-12-15 10:21:58.8401 Debug Warn => console
+2021-12-15 10:21:58.8401 Debug Error => console
+2021-12-15 10:21:58.8401 Debug Fatal => console
+2021-12-15 10:21:58.8696 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
+2021-12-15 10:21:58.8696 Debug Trace =>
+2021-12-15 10:21:58.8726 Debug Debug =>
+2021-12-15 10:21:58.8726 Debug Info => console
+2021-12-15 10:21:58.8726 Debug Warn => console
+2021-12-15 10:21:58.8726 Debug Error => console
+2021-12-15 10:21:58.8726 Debug Fatal => console
+2021-12-15 10:21:58.8726 Debug Targets for FactsetProcessor.Workers.FactsetWorker by level:
+2021-12-15 10:21:58.8726 Debug Trace =>
+2021-12-15 10:21:58.8726 Debug Debug =>
+2021-12-15 10:21:58.8726 Debug Info => jprocessor processor console
+2021-12-15 10:21:58.8726 Debug Warn => jprocessor processor console
+2021-12-15 10:21:58.8726 Debug Error => jprocessor processor console
+2021-12-15 10:21:58.8726 Debug Fatal => jprocessor processor console
+2021-12-15 10:21:58.8989 Debug FileTarget(Name=jprocessor): Preparing for new file 'C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-processor.json'
+2021-12-15 10:21:58.8989 Debug Creating file appender: C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-processor.json
+2021-12-15 10:21:58.9055 Debug FileTarget(Name=processor): Preparing for new file 'C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Processor.Log'
+2021-12-15 10:21:58.9055 Debug Creating file appender: C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Processor.Log
+2021-12-15 10:21:58.9055 Debug Targets for WebsocketBaseCollector.HostedServices.SignalrKeepAlive by level:
+2021-12-15 10:21:58.9188 Debug Trace =>
+2021-12-15 10:21:58.9188 Debug Debug =>
+2021-12-15 10:21:58.9188 Debug Info => collectorhub console
+2021-12-15 10:21:58.9188 Debug Warn => collectorhub console
+2021-12-15 10:21:58.9188 Debug Error => collectorhub console
+2021-12-15 10:21:58.9188 Debug Fatal => collectorhub console
+2021-12-15 10:21:58.9188 Debug FileTarget(Name=collectorhub): Preparing for new file 'C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Hub.Log'
+2021-12-15 10:21:58.9188 Debug Creating file appender: C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Hub.Log
+2021-12-15 10:21:58.9360 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
+2021-12-15 10:21:58.9360 Debug Trace =>
+2021-12-15 10:21:58.9360 Debug Debug =>
+2021-12-15 10:21:58.9360 Debug Info => console
+2021-12-15 10:21:58.9360 Debug Warn => console
+2021-12-15 10:21:58.9360 Debug Error => console
+2021-12-15 10:21:58.9360 Debug Fatal => console
+2021-12-15 10:21:58.9518 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
+2021-12-15 10:21:58.9518 Debug Trace =>
+2021-12-15 10:21:58.9518 Debug Debug =>
+2021-12-15 10:21:58.9518 Debug Info => console
+2021-12-15 10:21:58.9518 Debug Warn => console
+2021-12-15 10:21:58.9518 Debug Error => console
+2021-12-15 10:21:58.9518 Debug Fatal => console
+2021-12-15 10:21:59.0445 Debug Targets for Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager by level:
+2021-12-15 10:21:59.0445 Debug Trace =>
+2021-12-15 10:21:59.0445 Debug Debug =>
+2021-12-15 10:21:59.0445 Debug Info => console
+2021-12-15 10:21:59.0445 Debug Warn => console
+2021-12-15 10:21:59.0445 Debug Error => console
+2021-12-15 10:21:59.0445 Debug Fatal => console
+2021-12-15 10:21:59.0445 Debug Targets for Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext by level:
+2021-12-15 10:21:59.0445 Debug Trace =>
+2021-12-15 10:21:59.0445 Debug Debug =>
+2021-12-15 10:21:59.0445 Debug Info => console
+2021-12-15 10:21:59.0445 Debug Warn => console
+2021-12-15 10:21:59.0445 Debug Error => console
+2021-12-15 10:21:59.0445 Debug Fatal => console
+2021-12-15 10:21:59.0445 Debug Targets for Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher by level:
+2021-12-15 10:21:59.0445 Debug Trace =>
+2021-12-15 10:21:59.0445 Debug Debug =>
+2021-12-15 10:21:59.0595 Debug Info => console
+2021-12-15 10:21:59.0595 Debug Warn => console
+2021-12-15 10:21:59.0595 Debug Error => console
+2021-12-15 10:21:59.0595 Debug Fatal => console
+2021-12-15 10:21:59.0869 Debug Targets for Microsoft.AspNetCore.SignalR.Internal.DefaultHubProtocolResolver by level:
+2021-12-15 10:21:59.0869 Debug Trace =>
+2021-12-15 10:21:59.0869 Debug Debug =>
+2021-12-15 10:21:59.0869 Debug Info => console
+2021-12-15 10:21:59.0869 Debug Warn => console
+2021-12-15 10:21:59.0912 Debug Error => console
+2021-12-15 10:21:59.0912 Debug Fatal => console
+2021-12-15 10:21:59.1217 Debug Targets for Microsoft.AspNetCore.SignalR.HubConnectionHandler by level:
+2021-12-15 10:21:59.1217 Debug Trace =>
+2021-12-15 10:21:59.1217 Debug Debug =>
+2021-12-15 10:21:59.1217 Debug Info => console
+2021-12-15 10:21:59.1217 Debug Warn => console
+2021-12-15 10:21:59.1217 Debug Error => console
+2021-12-15 10:21:59.1217 Debug Fatal => console
+2021-12-15 10:21:59.1217 Debug Targets for Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher by level:
+2021-12-15 10:21:59.1217 Debug Trace =>
+2021-12-15 10:21:59.1217 Debug Debug =>
+2021-12-15 10:21:59.1217 Debug Info => console
+2021-12-15 10:21:59.1217 Debug Warn => console
+2021-12-15 10:21:59.1217 Debug Error => console
+2021-12-15 10:21:59.1217 Debug Fatal => console
+2021-12-15 10:21:59.1683 Debug Targets for Microsoft.AspNetCore.WebSockets.WebSocketMiddleware by level:
+2021-12-15 10:21:59.1683 Debug Trace =>
+2021-12-15 10:21:59.1683 Debug Debug =>
+2021-12-15 10:21:59.1683 Debug Info => console
+2021-12-15 10:21:59.1683 Debug Warn => console
+2021-12-15 10:21:59.1683 Debug Error => console
+2021-12-15 10:21:59.1683 Debug Fatal => console
+2021-12-15 10:21:59.1683 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2021-12-15 10:21:59.1683 Debug Trace =>
+2021-12-15 10:21:59.1683 Debug Debug =>
+2021-12-15 10:21:59.1683 Debug Info => console
+2021-12-15 10:21:59.1683 Debug Warn => console
+2021-12-15 10:21:59.1683 Debug Error => console
+2021-12-15 10:21:59.1683 Debug Fatal => console
+2021-12-15 10:21:59.1683 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2021-12-15 10:21:59.1683 Debug Trace =>
+2021-12-15 10:21:59.1845 Debug Debug =>
+2021-12-15 10:21:59.1845 Debug Info => console
+2021-12-15 10:21:59.1845 Debug Warn => console
+2021-12-15 10:21:59.1845 Debug Error => console
+2021-12-15 10:21:59.1845 Debug Fatal => console
+2021-12-15 10:21:59.1845 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2021-12-15 10:21:59.1845 Debug Trace =>
+2021-12-15 10:21:59.1845 Debug Debug =>
+2021-12-15 10:21:59.1845 Debug Info => console
+2021-12-15 10:21:59.1845 Debug Warn => console
+2021-12-15 10:21:59.1845 Debug Error => console
+2021-12-15 10:21:59.1845 Debug Fatal => console
+2021-12-15 10:27:07.3307 Info AppDomain Shutting down. Logger closing...
+2021-12-15 10:27:07.3307 Debug Stopping file watching for path 'C:\src\bshabaz-mds\lightpoint-core\Server\LP.MDS.Collectors\src\Collectors\Factset\wsFactset\bin\Release\net5.0' filter 'nlog.config'
+2021-12-15 10:27:07.3468 Debug Flush completed
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: wsFactset.Program
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: ServiceProtocol.Services.ReferenceDataService
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: FactsetProcessor.Workers.FactsetWorker
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: WebsocketBaseCollector.HostedServices.SignalrKeepAlive
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.SignalR.Internal.DefaultHubProtocolResolver
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.SignalR.HubConnectionHandler
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher
+2021-12-15 10:27:07.3468 Debug Targets not configured for logger: Microsoft.AspNetCore.WebSockets.WebSocketMiddleware
+2021-12-15 10:27:07.3616 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2021-12-15 10:27:07.3616 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2021-12-15 10:27:07.3616 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2021-12-15 10:27:07.3616 Debug Closing logging configuration...
+2021-12-15 10:27:07.3616 Debug Closing target 'File Target[wsFactset]'.
+2021-12-15 10:27:07.3616 Debug FileAppender Closing Invalidate - C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-wsFactset.Log
+2021-12-15 10:27:07.3616 Debug Closed target 'File Target[wsFactset]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'File Target[collectorhub]'.
+2021-12-15 10:27:07.3784 Debug FileAppender Closing Invalidate - C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Hub.Log
+2021-12-15 10:27:07.3784 Debug Closed target 'File Target[collectorhub]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'File Target[jprocessor]'.
+2021-12-15 10:27:07.3784 Debug FileAppender Closing Invalidate - C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-processor.json
+2021-12-15 10:27:07.3784 Debug Closed target 'File Target[jprocessor]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'File Target[processor]'.
+2021-12-15 10:27:07.3784 Debug FileAppender Closing Invalidate - C:/Temp/ErrorLog/LP.FactsetCollector/2021-12-15__LPFS-bshahbaz_62732-Processor.Log
+2021-12-15 10:27:07.3784 Debug Closed target 'File Target[processor]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'File Target[snapshot]'.
+2021-12-15 10:27:07.3784 Debug Closed target 'File Target[snapshot]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'ColoredConsole Target[console]'.
+2021-12-15 10:27:07.3784 Debug Closed target 'ColoredConsole Target[console]'.
+2021-12-15 10:27:07.3784 Debug Closing target 'Console Target[jsonconsole]'.
+2021-12-15 10:27:07.3784 Debug Closed target 'Console Target[jsonconsole]'.
+2021-12-15 10:27:07.3784 Debug Finished closing logging configuration.
+2021-12-15 10:27:07.3784 Info Logger has been shut down.

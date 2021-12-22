@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HostedServices\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="HostedServices\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="HostedServices\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.18.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+    <PackageReference Include="Grpc.Core" Version="2.41.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.41.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Markers\Web.Marker\Web.Marker.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Protocols\ServiceProtocol\ServiceProtocol.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="..\..\..\Protos\MDS.proto" GrpcServices="Server" Link="Protos\MDS.proto"></Protobuf>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="AutoMapper" />
+	  <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+	  <None Remove="Services\" />
+	  <None Remove="HostedServices\" />
+	  <None Remove="Mappers\Extensions\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Mappers\Extensions\" />
+	</ItemGroup>
+</Project>
